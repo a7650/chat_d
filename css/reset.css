@@ -1,0 +1,37 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,
+li,pre,form,fieldset,legend,button,input,textarea,th,td{
+	margin:0;
+	padding:0;
+}
+body,button,input,select,textarea{
+	font: 12px/1.5 tahoma,arial,\5b8b\4f53;
+}
+ul,li,ol{list-style:none;}
+a{text-decoration:none;display: block;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+address,cite,dfn,em,var{font-style: normal;}
+code,kbd,pre,samp,p{font-family:sans-serif}
+small{font-size: 12px;}
+a:hover{text-decoration: underline;}
+sup{vertical-align: text-top;}
+sub{vertical-align: bottom;}
+legend{color: #000;}
+fieldset{border: 0}
+button,input,select,textarea{font-size: 100%}
+table{border-collapse: collapse;border-spacing: 0;}
+.clear{clear: both;float: none;height: 0;overflow: hidden;}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	font-size: 0;
+}
+html .hide{display: none;}	
+
+
+
+
+

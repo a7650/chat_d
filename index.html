@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CHAT</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/container.css">
+		<link id="iecss" rel="stylesheet" type="text/css" href="css/login.css" />  
+	</head>
+
+	<body>
+		<div id="denglu" style="background: url(imgs/wallpaper_11.jpg) no-repeat;background-size: cover;">
+			<div id="flip_container">
+				<div id="container">
+					<div id="login_window">
+				<div class="head_line"></div>
+				<h3>SIGN UP</h3>
+				<span class="input_tips">账号</span><input id="username" type="text" />
+				<span class="input_tips">密码</span><input id="password" type="password" />
+				<div id="login_status">					</div>
+				<button id="login">登陆</button>
+				<div id="login_regist">
+					注册账号
+				</div>
+				
+			</div>
+					<div id="regist_window">
+				<div class="head_line"></div>
+				<h3>REGISTER</h3>
+				<span class="input_tips">账号</span><input type="text" id="username2" placeholder="账号为字母开头  长度大于4" />
+				<span class="input_tips">密码</span><input type="password"  id="password2" placeholder="密码随意"/>
+				<div id="regist_status"></div>
+				<button id="regist">注册</button>
+				<div id="regist_login">
+					返回登陆窗口
+				</div>
+				
+			</div>
+				</div>
+		</div>
+		</div>
+		
+		
+		
+		
+		
+		<div id="left_1">
+			<div id="my_app">
+				<div class="icon_1">
+					<div class="item1"></div>
+				</div>
+				<div class="icon_2">
+					<div class="item2"></div>
+				</div>	
+				<div class="icon_3">
+					<div class="item3"></div>
+				</div>
+				<div class="icon_last">
+					<div class="item_last"></div>
+				</div>
+			</div>
+			
+			<a href="#" id="grid"></a>
+			<a href="#" id="setting"></a>
+		</div>
+		<div id="left_2">
+			<span id="left2_hide"></span>
+			<div id="menu" class="clearfix">
+				<div>
+					<span>MENU</span>
+					<img src="imgs/Settings.png">
+				</div>
+				<ul>
+					<li><a href="#">Overview</a><span class="new_message">54</span></li>
+					<li><a href="#">Sales</a><span></span></li>
+					<li><a href="#">Your Staff</a><span class="new_message">10</span></li>
+					<li><a href="#">Analytics & Targeting</a><span></span></li>
+					<li><a href="#">What is New</a><span></span></li>
+				</ul>
+			</div>
+			<div id="products" class="clearfix">
+				<div>
+					<span>YOUR PRODUCTS</span>
+					<img src="imgs/Settings.png">
+				</div>
+				<ul>
+					<li>
+						<img src="imgs/BookofWisdom.png">
+						<a href="#">Books</a><span></span>
+					</li>
+					<li>
+						<img src="imgs/VideoCamera.png">
+						<a href="#">Tutorials</a><span></span>
+					</li>
+					<li>
+						<img src="imgs/Painting.png">
+						<a href="#">Stocks</a><span></span>
+					</li>
+					<li>
+						<img src="imgs/Chart.png">
+						<a href="#">Infographics</a><span></span>
+					</li>
+				</ul>
+			</div>
+			<div id="dashboard" class="clearfix">
+				<div>
+					<span>DASHBOARD</span>
+					<img src="imgs/Settings.png">
+				</div>
+				<ul>
+					<li><a class="current" href="#">Messages</a><span class="new_message">21</span></li>
+					<li><a href="#">Connections</a><span></span></li>
+					<li><a href="#">Integrations</a><span class="warn">!</span></li>
+					<li><a href="#">Account Settings</a><span></span></li>
+					<li><a href="#">App Settings</a><span></span></li>
+				</ul>
+			</div>
+		</div>
+		<div id="head">
+			<h3>Messages</h3>
+			<!--<div id="system_message"><span>系统消息：</span><span>对方已同意您的请求</span></div>-->
+			<div id="user_message" class="online">
+				<img src="imgs/defaultmy.png"  id="user_face" />
+				<div id="user_name">USER_NAME</div>
+				<div id="user_address">Administrator</div>
+				<img src="imgs/dropdown.png" id="dropdown" alt="dropdown" />
+			</div>
+				
+			
+						
+					
+					
+			
+		</div>
+		<div id="right_1">
+			<div id="search">
+				<input type="text" placeholder="search">
+				<img src="imgs/Searchicon.png">
+			</div>
+			<div id="message_list">
+				<div id="add_friend">
+					<input type="text" id="add_username" placeholder="输入对方的用户名来添加好友"/>
+					<button>添加</button><br />
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div id="right_2">
+			<div class="head">
+				<h3>current_linker</h3>
+				<div id="page">
+					<h4>1 of 28</h4>
+					<div id="page_lf">
+						<div id="page_left"><img src="imgs/Arrowleft.png"></div>
+						<div id="page_right"><img src="imgs/Arrowright.png"></div>
+					</div>
+
+					
+				</div>
+				<div id="right_2_icon">
+					<div><img src="imgs/Usericon.png" ></div>
+					<div><img src="imgs/Uploadicon.png"></div>
+					<div><img src="imgs/Trashicon.png"></div>
+				</div>
+			</div>
+			<div id="input">
+				<input type="text" id="input_message">
+				<button id="send">SEND</button>
+			</div>
+		</div>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script src="js/login.js"></script>
+<script type="text/javascript" src="js/js1.js"></script>
+	</body>
+</html>
