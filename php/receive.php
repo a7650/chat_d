@@ -1,10 +1,15 @@
 <?php
-header('Content-type:text/json');
+//	// 指定允许其他域名访问
+//header('Access-Control-Allow-Origin:*');
+//// 响应类型
+//header('Access-Control-Allow-Methods:POST');
+//// 响应头设置
+//header('Access-Control-Allow-Headers:x-requested-with,content-type');
 
+header('Content-type:text/json');
 $dataa=$_POST["data"];
 $data=json_decode($dataa,true);
 $receiveder=$data["username"];
-
 $dbuser = 'root';           
 $dbpass = '';   
 $dbhost = 'localhost:3302';       
@@ -13,10 +18,7 @@ if(! $conn )
 {
     die(json_encode(array("code"=>"0","error_message"=>"连接失败")));
 }
-
-
 mysqli_query($conn , "set names utf8");
-
 mysqli_select_db( $conn,"public");
 $sql = "SELECT *
         FROM transfer where receiveder='$receiveder' or receiveder='A00'";

@@ -1,7 +1,5 @@
 <?php
-	
 header('Content-type:text/json');
-
 $dataa=$_POST["data"];
 if(!$dataa){
 	die (json_encode(array("code"=>"0","error_message"=>"dataa")));
@@ -22,10 +20,6 @@ if(! $conn )
 {
     die (json_encode(array("code"=>"0","error_message"=>"连接失败，请检查网络")));
 }
-
-
-
-
 mysqli_select_db( $conn,"public");
 mysqli_query($conn , "set names utf8");
 $sql="insert into transfer".
@@ -47,6 +41,4 @@ $sql="insert into send".
 		die (json_encode(array("code"=>"0","error_message"=>"存储用户信息表失败")));
 	}
 	echo json_encode(array("code"=>"1"));
-
-
 ?>
